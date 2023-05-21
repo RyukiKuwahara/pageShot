@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  hackathon:
+      build: .
+      tty: true
+      volumes:
+          - .:/app
+      ports:
+          - 5050:5050
+      working_dir: /app
+      restart: always
